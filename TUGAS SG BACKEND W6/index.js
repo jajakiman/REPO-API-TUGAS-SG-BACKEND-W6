@@ -1,12 +1,12 @@
 // 1. Mengimpor modul express
 const express = require('express');
-const db = require('./models'); // Mengimpor model Sequelize
+const db = require('./src/models'); // Mengimpor model Sequelize dari folder yang benar
 const app = express();
-const userRoutes = require('./routes/user');
-const itemRoutes = require('./routes/item');
-const supplierRoutes = require('./routes/supplier');
-const stockInRoutes = require('./routes/stockIn');
-const stockOutRoutes = require('./routes/stockOut');
+const userRoutes = require('./src/routes/user');
+const itemRoutes = require('./src/routes/item');
+const supplierRoutes = require('./src/routes/supplier');
+const stockInRoutes = require('./src/routes/stockIn');
+const stockOutRoutes = require('./src/routes/stockOut');
 
 require('dotenv').config();
 // 3. Mendefinisikan port untuk server
